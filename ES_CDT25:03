@@ -1,0 +1,10 @@
+<!ELEMENT TEI (header,facsimile?,text+) >
+
+<!ELEMENT header (#PCDATA) >
+<!ATTLIST header ATT1 CDATA #FIXED NMTOKEN #IMPLIED>
+
+<!ELEMENT facsimile (#PCDATA) >
+<!ATTLIST facsimile ATT2 source #REQUIRED IDREFS #IMPLIED>
+
+<!ELEMENT text (#PCDATA|seg) >
+<!ATTLIST text ATT3 ID #REQUIRED CDATA #IMPLIED>
